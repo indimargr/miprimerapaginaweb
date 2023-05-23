@@ -37,7 +37,7 @@ body{
 
 footer {
   background-color: black;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 40px;
@@ -98,17 +98,26 @@ footer {
     align-items: center;
   }
   
+  
+  .button-menu-toggle {
+    display: none;
+  }
+
   .img-container{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
   }
-  
-  .button-menu-toggle {
-    display: none;
-  }
 
+  .video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+
+  }
 
   @media (max-width: 768px) {
     .column {
@@ -150,5 +159,10 @@ footer {
 
     .img-container{
       flex-direction: column;
+    }
+
+    .video-container{
+      padding: 10px;
+      gap:5px;
     }
     }
